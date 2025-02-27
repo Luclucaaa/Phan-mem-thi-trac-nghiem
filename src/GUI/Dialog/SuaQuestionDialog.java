@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
 package GUI.Dialog;
+
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -15,12 +16,12 @@ import javax.swing.JOptionPane;
  *
  * @author THELUC
  */
-public class QuestionDialog extends javax.swing.JDialog {
+public class SuaQuestionDialog extends javax.swing.JDialog {
 
     /**
-     * Creates new form QuestionDialog
+     * Creates new form SuaQuestionDialog
      */
-    public QuestionDialog(java.awt.Frame parent, boolean modal) {
+    public SuaQuestionDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -34,17 +35,8 @@ public class QuestionDialog extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea6 = new javax.swing.JTextArea();
-        jLabel18 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jComboBox2 = new javax.swing.JComboBox<>();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -83,81 +75,32 @@ public class QuestionDialog extends javax.swing.JDialog {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea7 = new javax.swing.JTextArea();
         jLabel16 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jLabel17 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea6 = new javax.swing.JTextArea();
+        jLabel18 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(153, 255, 204));
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel8.setText("Thêm câu hỏi mới");
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(513, 513, 513)
-                .addComponent(jLabel8)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabel8)
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel2.setText("Mã câu hỏi");
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setBackground(new java.awt.Color(255, 102, 102));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jButton2.setText("Hủy bỏ");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel3.setText("Chủ đề");
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jLabel4.setText("Nội dung câu hỏi");
-
-        jTextArea6.setColumns(20);
-        jTextArea6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jTextArea6.setRows(5);
-        jScrollPane1.setViewportView(jTextArea6);
-
-        jLabel18.setText("Thêm hình ảnh.");
-        jLabel18.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jLabel18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel18MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 865, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-        );
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Dễ - 1 điểm", "Trung Bình - 2 điểm", "Khó - 3 điểm" }));
 
         jPanel3.setLayout(new java.awt.GridLayout(1, 5));
 
@@ -486,24 +429,86 @@ public class QuestionDialog extends javax.swing.JDialog {
 
         jPanel3.add(jPanel14);
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Dễ - 1 điểm", "Trung Bình - 2 điểm", "Khó - 3 điểm" }));
-        jComboBox2.setSelectedItem(this);
+        jButton1.setBackground(new java.awt.Color(0, 255, 51));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jButton1.setText("Sửa");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jPanel2.setBackground(new java.awt.Color(153, 255, 204));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel8.setText("Sửa câu hỏi");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(555, 555, 555)
+                .addComponent(jLabel8)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel8)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+
+        jTextArea6.setColumns(20);
+        jTextArea6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jTextArea6.setRows(5);
+        jScrollPane1.setViewportView(jTextArea6);
+
+        jLabel18.setText("Thêm hình ảnh.");
+        jLabel18.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel18.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jLabel18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel18MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 865, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+        );
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel2.setText("Mã câu hỏi");
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel17.setText("Mức độ");
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 51));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jButton1.setText("Thêm mới");
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel4.setText("Nội dung câu hỏi");
 
-        jButton2.setBackground(new java.awt.Color(255, 102, 102));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        jButton2.setText("Hủy bỏ");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        jLabel3.setText("Chủ đề");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -512,32 +517,31 @@ public class QuestionDialog extends javax.swing.JDialog {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
+                        .addComponent(jLabel4)
+                        .addGap(18, 18, 18)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(51, 51, 51)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(18, 18, 18)
-                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(51, 51, 51)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(183, 183, 183)
-                                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(461, 461, 461)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(98, 98, 98)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(183, 183, 183)
+                                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(504, 504, 504))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -559,19 +563,19 @@ public class QuestionDialog extends javax.swing.JDialog {
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
+                .addGap(68, 68, 68)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(45, 45, 45))
+                .addGap(37, 37, 37))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         JFileChooser fileChooser = new JFileChooser();
@@ -579,20 +583,20 @@ public class QuestionDialog extends javax.swing.JDialog {
 
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-        
-        try {
-            BufferedImage img = ImageIO.read(selectedFile);
-            // Scale ảnh theo JLabel
-            Image scaledImage = img.getScaledInstance(jLabel10.getWidth(), jLabel10.getHeight(), Image.SCALE_SMOOTH);
-            ImageIcon icon = new ImageIcon(scaledImage);
 
-            // Xóa text và hiển thị ảnh
-            jLabel10.setText("");  
-            jLabel10.setIcon(icon); 
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
-        }
-        // TODO add your handling code here:
+            try {
+                BufferedImage img = ImageIO.read(selectedFile);
+                // Scale ảnh theo JLabel
+                Image scaledImage = img.getScaledInstance(jLabel10.getWidth(), jLabel10.getHeight(), Image.SCALE_SMOOTH);
+                ImageIcon icon = new ImageIcon(scaledImage);
+
+                // Xóa text và hiển thị ảnh
+                jLabel10.setText("");
+                jLabel10.setIcon(icon);
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
+            }
+            // TODO add your handling code here:
     }//GEN-LAST:event_jLabel10MouseClicked
     }
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
@@ -601,40 +605,40 @@ public class QuestionDialog extends javax.swing.JDialog {
 
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-        
-        try {
-            BufferedImage img = ImageIO.read(selectedFile);
-            // Scale ảnh theo JLabel
-            Image scaledImage = img.getScaledInstance(jLabel11.getWidth(), jLabel11.getHeight(), Image.SCALE_SMOOTH);
-            ImageIcon icon = new ImageIcon(scaledImage);
 
-            // Xóa text và hiển thị ảnh
-            jLabel11.setText("");  
-            jLabel11.setIcon(icon); 
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
-        }        // TODO add your handling code here:
+            try {
+                BufferedImage img = ImageIO.read(selectedFile);
+                // Scale ảnh theo JLabel
+                Image scaledImage = img.getScaledInstance(jLabel11.getWidth(), jLabel11.getHeight(), Image.SCALE_SMOOTH);
+                ImageIcon icon = new ImageIcon(scaledImage);
+
+                // Xóa text và hiển thị ảnh
+                jLabel11.setText("");
+                jLabel11.setIcon(icon);
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
+            }        // TODO add your handling code here:
     }//GEN-LAST:event_jLabel11MouseClicked
-    }   
+    }
     private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
         JFileChooser fileChooser = new JFileChooser();
         int returnValue = fileChooser.showOpenDialog(this);
 
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-        
-        try {
-            BufferedImage img = ImageIO.read(selectedFile);
-            // Scale ảnh theo JLabel
-            Image scaledImage = img.getScaledInstance(jLabel12.getWidth(), jLabel12.getHeight(), Image.SCALE_SMOOTH);
-            ImageIcon icon = new ImageIcon(scaledImage);
 
-            // Xóa text và hiển thị ảnh
-            jLabel12.setText("");  
-            jLabel12.setIcon(icon); 
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
-        }// TODO add your handling code here:
+            try {
+                BufferedImage img = ImageIO.read(selectedFile);
+                // Scale ảnh theo JLabel
+                Image scaledImage = img.getScaledInstance(jLabel12.getWidth(), jLabel12.getHeight(), Image.SCALE_SMOOTH);
+                ImageIcon icon = new ImageIcon(scaledImage);
+
+                // Xóa text và hiển thị ảnh
+                jLabel12.setText("");
+                jLabel12.setIcon(icon);
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
+            }// TODO add your handling code here:
     }//GEN-LAST:event_jLabel12MouseClicked
     }
     private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
@@ -643,19 +647,19 @@ public class QuestionDialog extends javax.swing.JDialog {
 
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-        
-        try {
-            BufferedImage img = ImageIO.read(selectedFile);
-            // Scale ảnh theo JLabel
-            Image scaledImage = img.getScaledInstance(jLabel13.getWidth(), jLabel13.getHeight(), Image.SCALE_SMOOTH);
-            ImageIcon icon = new ImageIcon(scaledImage);
 
-            // Xóa text và hiển thị ảnh
-            jLabel13.setText("");  
-            jLabel13.setIcon(icon); 
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
-        }// TODO add your handling code here:
+            try {
+                BufferedImage img = ImageIO.read(selectedFile);
+                // Scale ảnh theo JLabel
+                Image scaledImage = img.getScaledInstance(jLabel13.getWidth(), jLabel13.getHeight(), Image.SCALE_SMOOTH);
+                ImageIcon icon = new ImageIcon(scaledImage);
+
+                // Xóa text và hiển thị ảnh
+                jLabel13.setText("");
+                jLabel13.setIcon(icon);
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
+            }// TODO add your handling code here:
     }//GEN-LAST:event_jLabel13MouseClicked
     }
     private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
@@ -664,19 +668,19 @@ public class QuestionDialog extends javax.swing.JDialog {
 
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-        
-        try {
-            BufferedImage img = ImageIO.read(selectedFile);
-            // Scale ảnh theo JLabel
-            Image scaledImage = img.getScaledInstance(jLabel14.getWidth(), jLabel14.getHeight(), Image.SCALE_SMOOTH);
-            ImageIcon icon = new ImageIcon(scaledImage);
 
-            // Xóa text và hiển thị ảnh
-            jLabel14.setText("");  
-            jLabel14.setIcon(icon); 
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
-        }// TODO add your handling code here:
+            try {
+                BufferedImage img = ImageIO.read(selectedFile);
+                // Scale ảnh theo JLabel
+                Image scaledImage = img.getScaledInstance(jLabel14.getWidth(), jLabel14.getHeight(), Image.SCALE_SMOOTH);
+                ImageIcon icon = new ImageIcon(scaledImage);
+
+                // Xóa text và hiển thị ảnh
+                jLabel14.setText("");
+                jLabel14.setIcon(icon);
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
+            }// TODO add your handling code here:
     }//GEN-LAST:event_jLabel14MouseClicked
     }
     private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
@@ -685,47 +689,51 @@ public class QuestionDialog extends javax.swing.JDialog {
 
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-        
-        try {
-            BufferedImage img = ImageIO.read(selectedFile);
-            // Scale ảnh theo JLabel
-            Image scaledImage = img.getScaledInstance(jLabel14.getWidth(), jLabel14.getHeight(), Image.SCALE_SMOOTH);
-            ImageIcon icon = new ImageIcon(scaledImage);
 
-            // Xóa text và hiển thị ảnh
-            jLabel14.setText("");  
-            jLabel14.setIcon(icon); 
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
-        }        // TODO add your handling code here:
+            try {
+                BufferedImage img = ImageIO.read(selectedFile);
+                // Scale ảnh theo JLabel
+                Image scaledImage = img.getScaledInstance(jLabel14.getWidth(), jLabel14.getHeight(), Image.SCALE_SMOOTH);
+                ImageIcon icon = new ImageIcon(scaledImage);
+
+                // Xóa text và hiển thị ảnh
+                jLabel14.setText("");
+                jLabel14.setIcon(icon);
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
+            }        // TODO add your handling code here:
     }//GEN-LAST:event_jLabel16MouseClicked
-}
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
+    }
     private void jLabel18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel18MouseClicked
         JFileChooser fileChooser = new JFileChooser();
         int returnValue = fileChooser.showOpenDialog(this);
 
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
-        
-        try {
-            BufferedImage img = ImageIO.read(selectedFile);
-            // Scale ảnh theo JLabel
-            Image scaledImage = img.getScaledInstance(jLabel18.getWidth(), jLabel18.getHeight(), Image.SCALE_SMOOTH);
-            ImageIcon icon = new ImageIcon(scaledImage);
 
-            // Xóa text và hiển thị ảnh
-            jLabel18.setText("");  
-            jLabel18.setIcon(icon); 
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
-        }
-// TODO add your handling code here:
+            try {
+                BufferedImage img = ImageIO.read(selectedFile);
+                // Scale ảnh theo JLabel
+                Image scaledImage = img.getScaledInstance(jLabel18.getWidth(), jLabel18.getHeight(), Image.SCALE_SMOOTH);
+                ImageIcon icon = new ImageIcon(scaledImage);
+
+                // Xóa text và hiển thị ảnh
+                jLabel18.setText("");
+                jLabel18.setIcon(icon);
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(this, "Lỗi khi tải hình ảnh!", "Lỗi", JOptionPane.ERROR_MESSAGE);
+            }
+            // TODO add your handling code here:
     }//GEN-LAST:event_jLabel18MouseClicked
     }
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -743,20 +751,20 @@ public class QuestionDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(QuestionDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SuaQuestionDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(QuestionDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SuaQuestionDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(QuestionDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SuaQuestionDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(QuestionDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SuaQuestionDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                QuestionDialog dialog = new QuestionDialog(new javax.swing.JFrame(), true);
+                SuaQuestionDialog dialog = new SuaQuestionDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

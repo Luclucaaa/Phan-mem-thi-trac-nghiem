@@ -4,6 +4,11 @@
  */
 package GUI.Main;
 
+import GUI.Dialog.ExamDialog;
+import GUI.Dialog.QuestionDialog;
+import GUI.Dialog.TestDialog;
+import GUI.Dialog.TopicDialog;
+
 /**
  *
  * @author THELUC
@@ -13,10 +18,24 @@ public class Main extends javax.swing.JFrame {
     /**
      * Creates new form Main
      */
+    private QuestionDialog questionDialog;
+    private ExamDialog examDialog;
+    private TestDialog testDialog;
+    private TopicDialog topicDialog;
     public Main() {
         initComponents();
+        questionDialog = new QuestionDialog(this, true);
+        examDialog = new ExamDialog(this, true);
+        testDialog = new TestDialog(this, true);
+        topicDialog = new TopicDialog(this, true);
+        questionDialog.setLocationRelativeTo(null);
+        examDialog.setLocationRelativeTo(null);
+        testDialog.setLocationRelativeTo(null);
+        topicDialog.setLocationRelativeTo(null);
+        
         
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -439,6 +458,11 @@ public class Main extends javax.swing.JFrame {
         jButton3.setText("Sửa");
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/excel.png"))); // NOI18N
@@ -547,6 +571,11 @@ public class Main extends javax.swing.JFrame {
         cz1.setText("Thêm");
         cz1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         cz1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        cz1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cz1MouseClicked(evt);
+            }
+        });
         cz1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cz1ActionPerformed(evt);
@@ -663,6 +692,11 @@ public class Main extends javax.swing.JFrame {
         cz16.setText("Thêm");
         cz16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         cz16.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        cz16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cz16MouseClicked(evt);
+            }
+        });
         cz16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cz16ActionPerformed(evt);
@@ -783,6 +817,11 @@ public class Main extends javax.swing.JFrame {
         cz4.setText("Thêm");
         cz4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         cz4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        cz4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cz4MouseClicked(evt);
+            }
+        });
         cz4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cz4ActionPerformed(evt);
@@ -898,6 +937,11 @@ public class Main extends javax.swing.JFrame {
         cz7.setText("Thêm");
         cz7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         cz7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        cz7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cz7MouseClicked(evt);
+            }
+        });
         cz7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cz7ActionPerformed(evt);
@@ -1210,6 +1254,29 @@ public class Main extends javax.swing.JFrame {
         PanelPhai.revalidate();
         PanelPhai.repaint();
     }//GEN-LAST:event_TestMouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+       // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void cz7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cz7MouseClicked
+        questionDialog.setVisible(true);
+// TODO add your handling code here:
+    }//GEN-LAST:event_cz7MouseClicked
+
+    private void cz4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cz4MouseClicked
+        examDialog.setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_cz4MouseClicked
+
+    private void cz1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cz1MouseClicked
+        topicDialog.setVisible(true);
+// TODO add your handling code here:
+    }//GEN-LAST:event_cz1MouseClicked
+
+    private void cz16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cz16MouseClicked
+        testDialog.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cz16MouseClicked
 
     /**
      * @param args the command line arguments
