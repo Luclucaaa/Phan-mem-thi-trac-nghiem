@@ -4,8 +4,14 @@
  */
 package GUI.Main;
 
+import java.awt.Color;
 import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.JTable;
+
 
 /**
  *
@@ -53,7 +59,7 @@ public class UserFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jTable2 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -283,7 +289,7 @@ public class UserFrame extends javax.swing.JFrame {
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -294,8 +300,8 @@ public class UserFrame extends javax.swing.JFrame {
                 "Tên chủ đề", "Mô tả"
             }
         ));
-        jTable1.setRowHeight(50);
-        jScrollPane1.setViewportView(jTable1);
+        jTable2.setRowHeight(120);
+        jScrollPane1.setViewportView(jTable2);
 
         javax.swing.GroupLayout TaskTheTestPanelLayout = new javax.swing.GroupLayout(TaskTheTestPanel);
         TaskTheTestPanel.setLayout(TaskTheTestPanelLayout);
@@ -338,7 +344,10 @@ public class UserFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void UserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UserMouseClicked
-        
+        contentPanel.removeAll();
+        contentPanel.add(TaskTheTestPanel, "card3");
+        contentPanel.revalidate();
+        contentPanel.repaint();
     }//GEN-LAST:event_UserMouseClicked
 
     private void TopicMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TopicMouseClicked
@@ -408,7 +417,7 @@ public class UserFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
     private javax.swing.JLabel name;
     // End of variables declaration//GEN-END:variables
 }
