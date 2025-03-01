@@ -60,6 +60,7 @@ public class UserFrame extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+        SelectExamPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -320,6 +321,19 @@ public class UserFrame extends javax.swing.JFrame {
 
         contentPanel.add(TaskTheTestPanel, "card3");
 
+        javax.swing.GroupLayout SelectExamPanelLayout = new javax.swing.GroupLayout(SelectExamPanel);
+        SelectExamPanel.setLayout(SelectExamPanelLayout);
+        SelectExamPanelLayout.setHorizontalGroup(
+            SelectExamPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1206, Short.MAX_VALUE)
+        );
+        SelectExamPanelLayout.setVerticalGroup(
+            SelectExamPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 719, Short.MAX_VALUE)
+        );
+
+        contentPanel.add(SelectExamPanel, "card4");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -396,6 +410,7 @@ public class UserFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel HomePanel;
     private javax.swing.JPanel MenuPanel;
+    private javax.swing.JPanel SelectExamPanel;
     private javax.swing.JPanel TaskTheTestPanel;
     private javax.swing.JPanel Test;
     private javax.swing.JPanel Topic;
