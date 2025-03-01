@@ -10,6 +10,9 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import BUS.TopicBUS;
+import DTO.TopicDTO;
+import java.util.ArrayList;
 
 /**
  *
@@ -20,9 +23,12 @@ public class QuestionDialog extends javax.swing.JDialog {
     /**
      * Creates new form QuestionDialog
      */
+    
+    
     public QuestionDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        loadTopicsToComboBox();
     }
 
     /**
@@ -572,6 +578,14 @@ public class QuestionDialog extends javax.swing.JDialog {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+    private void loadTopicsToComboBox() {
+        TopicBUS topicBUS = new TopicBUS();
+        ArrayList<TopicDTO> topicList = topicBUS.getAllActiveTopics(); 
+
+        for (TopicDTO topic : topicList) {
+            jComboBox1.addItem(topic.getTpTitle()); //
+        }
+    }
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         JFileChooser fileChooser = new JFileChooser();
@@ -752,7 +766,7 @@ public class QuestionDialog extends javax.swing.JDialog {
             java.util.logging.Logger.getLogger(QuestionDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
