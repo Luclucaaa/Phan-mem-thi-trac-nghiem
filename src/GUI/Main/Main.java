@@ -909,7 +909,7 @@ public class Main extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Mã đề thi", "Mã bài thi", "Thứ tự đề", "Số lượng câu hỏi"
+                "Mã đề thi", "Mã bài thi", "Thứ tự đề", "Mã các câu hỏi"
             }
         ));
         jScrollPane3.setViewportView(jTable3);

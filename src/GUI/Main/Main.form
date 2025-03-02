@@ -1418,7 +1418,7 @@
                         <Column editable="true" title="M&#xe3; &#x111;&#x1ec1; thi" type="java.lang.Object"/>
                         <Column editable="true" title="M&#xe3; b&#xe0;i thi" type="java.lang.Object"/>
                         <Column editable="true" title="Th&#x1ee9; t&#x1ef1; &#x111;&#x1ec1;" type="java.lang.Object"/>
-                        <Column editable="true" title="S&#x1ed1; l&#x1b0;&#x1ee3;ng c&#xe2;u h&#x1ecf;i" type="java.lang.Object"/>
+                        <Column editable="true" title="M&#xe3; c&#xe1;c c&#xe2;u h&#x1ecf;i" type="java.lang.Object"/>
                       </Table>
                     </Property>
                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

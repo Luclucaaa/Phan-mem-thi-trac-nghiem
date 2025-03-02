@@ -55,16 +55,30 @@ public class UserFrame extends javax.swing.JFrame {
         contentPanel = new javax.swing.JPanel();
         HomePanel = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        TaskTheTestPanel = new javax.swing.JPanel();
+        ChooseTopicPanel = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        SelectExamPanel = new javax.swing.JPanel();
+        ChooseTestPanel = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        ChooseExamPanel = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        TaskTheTestPanel = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jPanel8 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jPanel9 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -308,27 +322,27 @@ public class UserFrame extends javax.swing.JFrame {
         jTable2.setRowHeight(120);
         jScrollPane1.setViewportView(jTable2);
 
-        javax.swing.GroupLayout TaskTheTestPanelLayout = new javax.swing.GroupLayout(TaskTheTestPanel);
-        TaskTheTestPanel.setLayout(TaskTheTestPanelLayout);
-        TaskTheTestPanelLayout.setHorizontalGroup(
-            TaskTheTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout ChooseTopicPanelLayout = new javax.swing.GroupLayout(ChooseTopicPanel);
+        ChooseTopicPanel.setLayout(ChooseTopicPanelLayout);
+        ChooseTopicPanelLayout.setHorizontalGroup(
+            ChooseTopicPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jScrollPane1)
         );
-        TaskTheTestPanelLayout.setVerticalGroup(
-            TaskTheTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TaskTheTestPanelLayout.createSequentialGroup()
+        ChooseTopicPanelLayout.setVerticalGroup(
+            ChooseTopicPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ChooseTopicPanelLayout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 628, Short.MAX_VALUE))
         );
 
-        contentPanel.add(TaskTheTestPanel, "card3");
+        contentPanel.add(ChooseTopicPanel, "card3");
 
         jPanel4.setBackground(new java.awt.Color(153, 255, 153));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
-        jLabel8.setText("Chọn chủ đề thi");
+        jLabel8.setText("Chọn bài thi");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -337,7 +351,7 @@ public class UserFrame extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(484, 484, 484)
                 .addComponent(jLabel8)
-                .addContainerGap(511, Short.MAX_VALUE))
+                .addContainerGap(561, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -355,27 +369,165 @@ public class UserFrame extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Mã bài thi", "Title ", "Title 3", "Title 4"
+                "Tên bài thi", "Số câu hỏi", "Thời gian làm bài", "Số lượt làm bài"
             }
         ));
         jScrollPane2.setViewportView(jTable1);
 
-        javax.swing.GroupLayout SelectExamPanelLayout = new javax.swing.GroupLayout(SelectExamPanel);
-        SelectExamPanel.setLayout(SelectExamPanelLayout);
-        SelectExamPanelLayout.setHorizontalGroup(
-            SelectExamPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout ChooseTestPanelLayout = new javax.swing.GroupLayout(ChooseTestPanel);
+        ChooseTestPanel.setLayout(ChooseTestPanelLayout);
+        ChooseTestPanelLayout.setHorizontalGroup(
+            ChooseTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jScrollPane2)
         );
-        SelectExamPanelLayout.setVerticalGroup(
-            SelectExamPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SelectExamPanelLayout.createSequentialGroup()
+        ChooseTestPanelLayout.setVerticalGroup(
+            ChooseTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ChooseTestPanelLayout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 628, Short.MAX_VALUE))
         );
 
-        contentPanel.add(SelectExamPanel, "card4");
+        contentPanel.add(ChooseTestPanel, "card4");
+
+        jPanel6.setBackground(new java.awt.Color(153, 255, 153));
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        jLabel10.setText("Chọn đề thi");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(484, 484, 484)
+                .addComponent(jLabel10)
+                .addContainerGap(567, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel10)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null},
+                {null},
+                {null},
+                {null}
+            },
+            new String [] {
+                "Đề thi"
+            }
+        ));
+        jScrollPane3.setViewportView(jTable3);
+
+        javax.swing.GroupLayout ChooseExamPanelLayout = new javax.swing.GroupLayout(ChooseExamPanel);
+        ChooseExamPanel.setLayout(ChooseExamPanelLayout);
+        ChooseExamPanelLayout.setHorizontalGroup(
+            ChooseExamPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jScrollPane3)
+        );
+        ChooseExamPanelLayout.setVerticalGroup(
+            ChooseExamPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ChooseExamPanelLayout.createSequentialGroup()
+                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 628, Short.MAX_VALUE))
+        );
+
+        contentPanel.add(ChooseExamPanel, "card5");
+
+        jPanel7.setBackground(new java.awt.Color(153, 255, 153));
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(439, 439, 439)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(476, Short.MAX_VALUE))
+        );
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
+        );
+
+        jPanel10.setLayout(new java.awt.GridBagLayout());
+        jPanel10.add(jLabel14, new java.awt.GridBagConstraints());
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setWrapStyleWord(true);
+        jTextArea1.setEnabled(false);
+        jScrollPane4.setViewportView(jTextArea1);
+
+        jPanel10.add(jScrollPane4, new java.awt.GridBagConstraints());
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(444, Short.MAX_VALUE))
+        );
+
+        jPanel10.getAccessibleContext().setAccessibleName("");
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 281, Short.MAX_VALUE)
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout TaskTheTestPanelLayout = new javax.swing.GroupLayout(TaskTheTestPanel);
+        TaskTheTestPanel.setLayout(TaskTheTestPanelLayout);
+        TaskTheTestPanelLayout.setHorizontalGroup(
+            TaskTheTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(TaskTheTestPanelLayout.createSequentialGroup()
+                .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        TaskTheTestPanelLayout.setVerticalGroup(
+            TaskTheTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(TaskTheTestPanelLayout.createSequentialGroup()
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(TaskTheTestPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        contentPanel.add(TaskTheTestPanel, "card6");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -402,7 +554,7 @@ public class UserFrame extends javax.swing.JFrame {
 
     private void UserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UserMouseClicked
         contentPanel.removeAll();
-        contentPanel.add(TaskTheTestPanel, "card3");
+        contentPanel.add(ChooseTopicPanel, "card3");
         contentPanel.revalidate();
         contentPanel.repaint();
     }//GEN-LAST:event_UserMouseClicked
@@ -451,9 +603,11 @@ public class UserFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel ChooseExamPanel;
+    private javax.swing.JPanel ChooseTestPanel;
+    private javax.swing.JPanel ChooseTopicPanel;
     private javax.swing.JPanel HomePanel;
     private javax.swing.JPanel MenuPanel;
-    private javax.swing.JPanel SelectExamPanel;
     private javax.swing.JPanel TaskTheTestPanel;
     private javax.swing.JPanel Test;
     private javax.swing.JPanel Topic;
@@ -461,8 +615,11 @@ public class UserFrame extends javax.swing.JFrame {
     private javax.swing.JPanel contentPanel;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
@@ -472,14 +629,25 @@ public class UserFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel name;
     // End of variables declaration//GEN-END:variables
 }
