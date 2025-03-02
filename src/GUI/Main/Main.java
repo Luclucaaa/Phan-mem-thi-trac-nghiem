@@ -778,13 +778,13 @@ public class Main extends javax.swing.JFrame {
 
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Mã bài thi", "Chủ đề", "Thời gian thi", "Số lượng câu hỏi", "Số lượt làm bài"
+                "Mã bài thi", "Tiêu đề bài thi", "Mã chủ đề", "Số câu dễ", "Số câu trung bình", "Số câu khó", "Số lượt làm bài", "Thời gian thi", "Ngày tạo", "Trạng thái"
             }
         ));
         jScrollPane4.setViewportView(jTable4);
