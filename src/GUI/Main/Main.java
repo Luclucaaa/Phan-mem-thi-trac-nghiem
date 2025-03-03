@@ -5,7 +5,7 @@
 package GUI.Main;
 
 import GUI.Dialog.ExamDialog;
-import GUI.Dialog.QuestionDialog;
+//import GUI.Dialog.QuestionDialog;
 import GUI.Dialog.TestDialog;
 import GUI.Dialog.TopicDialog;
 
@@ -18,17 +18,17 @@ public class Main extends javax.swing.JFrame {
     /**
      * Creates new form Main
      */
-    private QuestionDialog questionDialog;
+    //private QuestionDialog questionDialog;
     private ExamDialog examDialog;
     private TestDialog testDialog;
     private TopicDialog topicDialog;
     public Main() {
         initComponents();
-        questionDialog = new QuestionDialog(this, true);
+        //questionDialog = new QuestionDialog(this, true);
         examDialog = new ExamDialog(this, true);
         testDialog = new TestDialog(this, true);
         topicDialog = new TopicDialog(this, true);
-        questionDialog.setLocationRelativeTo(null);
+        //questionDialog.setLocationRelativeTo(null);
         examDialog.setLocationRelativeTo(null);
         testDialog.setLocationRelativeTo(null);
         topicDialog.setLocationRelativeTo(null);
@@ -1270,7 +1270,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3MouseClicked
 
     private void cz7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cz7MouseClicked
-        questionDialog.setVisible(true);
+        //questionDialog.setVisible(true);
 // TODO add your handling code here:
     }//GEN-LAST:event_cz7MouseClicked
 
